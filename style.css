@@ -56,6 +56,7 @@ nav a{
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    position: relative;
 }
 
 nav a:hover,
@@ -210,4 +211,54 @@ span{
         content: "BSIT";
     }
 }
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #b74b4b;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #b74b4b;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
 
